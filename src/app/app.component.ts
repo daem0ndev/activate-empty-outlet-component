@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'activate-empty-outlet-component';
+  mainActivated(ev) {
+    console.log('Main outlet activated', ev);
+  }
+
+  auxActivated(ev) {
+    console.log('Aux outlet activated', ev);
+  }
 }
